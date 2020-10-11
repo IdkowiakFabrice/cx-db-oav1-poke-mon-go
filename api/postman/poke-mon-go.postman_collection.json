@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "975ae829-3155-45bb-b036-689c0ce14c8c",
+		"name": "poke-mon-go",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4242/api/pokemons",
+					"host": [
+						"localhost"
+					],
+					"port": "4242",
+					"path": [
+						"api",
+						"pokemons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all Pokémons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4242/api/pokemons",
+					"host": [
+						"localhost"
+					],
+					"port": "4242",
+					"path": [
+						"api",
+						"pokemons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET one Pokémon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4242/api/pokemons/1",
+					"host": [
+						"localhost"
+					],
+					"port": "4242",
+					"path": [
+						"api",
+						"pokemons",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT one Pokémon",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"number\": \"1\",\r\n        \"name\": \"Bulbasaur\",\r\n        \"species\": \"Seed\",\r\n        \"types\": [\r\n            \"Grass\",\r\n            \"Poison\"\r\n        ],\r\n        \"abilities\": {\r\n            \"normal\": [\r\n                \"Overgrow\"\r\n            ],\r\n            \"hidden\": [\r\n                \"Chlorophyll\"\r\n            ]\r\n        },\r\n        \"eggGroups\": [\r\n            \"Monster\",\r\n            \"Grass\"\r\n        ],\r\n        \"gender\": [\r\n            87.5,\r\n            12.5\r\n        ],\r\n        \"height\": \"0.71 m\",\r\n        \"weight\": \"6.9 kg\",\r\n        \"family\": {\r\n            \"id\": 1,\r\n            \"evolutionStage\": 1,\r\n            \"evolutionLine\": [\r\n                \"Bulbasaur\",\r\n                \"Ivysaur\",\r\n                \"Venusaur\"\r\n            ]\r\n        },\r\n        \"starter\": \"false\",\r\n        \"legendary\": \"false\",\r\n        \"mythical\": \"false\",\r\n        \"ultraBeast\": \"true\",\r\n        \"mega\": \"true\",\r\n        \"gen\": 1,\r\n        \"description\": \"While it is young, it uses the nutrients that are stored in the seeds on its back in order to grow.\",\r\n        \"type\": [\r\n            \"Grass\",\r\n            \"Poison\"\r\n        ],\r\n        \"candy\": \"Bulbasaur Candy\",\r\n        \"candy_count\": 25,\r\n        \"egg\": \"2 km\",\r\n        \"spawn_chance\": 0.69,\r\n        \"avg_spawns\": 69,\r\n        \"spawn_time\": \"20:00\",\r\n        \"weaknesses\": [\r\n            \"Fire\",\r\n            \"Ice\",\r\n            \"Flying\",\r\n            \"Psychic\"\r\n        ],\r\n        \"evolution\": [\r\n            {\r\n                \"num\": \"002\",\r\n                \"name\": \"Ivysaur\"\r\n            },\r\n            {\r\n                \"num\": \"003\",\r\n                \"name\": \"Venusaur\"\r\n            }\r\n        ]\r\n    }"
+				},
+				"url": {
+					"raw": "localhost:4242/api/pokemons/1",
+					"host": [
+						"localhost"
+					],
+					"port": "4242",
+					"path": [
+						"api",
+						"pokemons",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE one Pokémon",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:4242/api/pokemons/12",
+					"host": [
+						"localhost"
+					],
+					"port": "4242",
+					"path": [
+						"api",
+						"pokemons",
+						"12"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
